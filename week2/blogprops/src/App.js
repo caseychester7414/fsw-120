@@ -53,9 +53,13 @@ let BlogPosts=
 
 function App(){
     return (
-      <div>
+        
+    <div classname="app-container">
+        <Header />
+    <div classname="blog-post-container">
         {BlogPosts.map(blogPost => {
       return(
+        
           <BlogPost
               title={blogPost.title} 
               subTitle={blogPost.subTitle} 
@@ -64,6 +68,8 @@ function App(){
           />
       )
     })}
+    </div>
       </div>
+
     )}
 export default App
