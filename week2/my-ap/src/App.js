@@ -47,7 +47,6 @@ let vacationSpots = [
   }
 
 ]
-console.log(vacationSpots)
 
 function App(){
 return (
