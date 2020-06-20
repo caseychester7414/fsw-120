@@ -1,4 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://db.onlinewebfonts.com/c/a1d8907023856091f1fa137b18616015?family=GlosaW01-RomanItalic");
 
 .imageBackGround{
    background-image: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=60");
+   width:100vw;
+   height:38vw;
+   background-position-x: 50%;
+   background-position-y: 55%;
+   background-origin: padding-box;
+   overflow: hidden;
+   background-size: cover;
+   /* opacity: 0.6; */
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items:center;
+   position:relative;
+   
+   
+    left: 0;
+    top: 0;
+}
+.imageBackGround:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 38vw;
+    background: #212529 linear-gradient(to bottom, #212529, #212529) repeat 0 0;
+    z-index: 1;
+    opacity: 0.5;
+}  
+
+.subheading {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+.site-heading h1{
+    
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+
+}
+.nav-item {
+    margin-left: 10px;
+    z-index: 2;
+
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+.navbar-brand{
+    text-decoration: none;
+    z-index: 2;
+    color: white;
+}
+.div button{
+    flex-direction: column;
+    position: absolute;
+    
+    
 }

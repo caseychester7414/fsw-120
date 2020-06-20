@@ -1,7 +1,9 @@
 import React from 'react';
 import BlogPost from './BlogPost.js';
 import Header from './Header';
+import Footer from './Footer'
 import './App.css';
+
 
 let BlogPosts=
 [
@@ -54,9 +56,11 @@ let BlogPosts=
 function App(){
     return (
         
-    <div classname="app-container">
+    <div className="app-container">
         <Header />
-    <div classname="blog-post-container">
+        
+
+    <div className="blog-post-container">
         {BlogPosts.map(blogPost => {
       return(
         
@@ -69,6 +73,7 @@ function App(){
       )
     })}
     </div>
+    <Footer />
       </div>
 
     )}
