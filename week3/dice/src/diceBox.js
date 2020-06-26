@@ -11,9 +11,9 @@ class DiceBox extends React.Component {
             num4: 0,
             num5: 0
         }
-        this.handleClick = this.handleClick.bind(this)
+        
     }
-    handleClick() {
+    handleClick=() => {
         this.setState(prevState => {
             return {
                 num1: Math.floor(Math.random() * 6),
@@ -27,12 +27,12 @@ class DiceBox extends React.Component {
     render() {
         return (
             <div>
-                
+                <button onClick={this.handleClick}>roll the Dice!!</button>
                 <Die num={this.state.num1}/>
-                <h1 className="dice">{this.state.num2}</h1>
-                <h1 className="dice">{this.state.num3}</h1>
-                <h1 className="dice">{this.state.num4}</h1>
-                <h1 className="dice">{this.state.num5}</h1>
+                <Die num={this.state.num2}/>
+                <Die num={this.state.num3}/>
+                <Die num={this.state.num4}/>
+                <Die num={this.state.num5}/>
             </div>
         )
     }
