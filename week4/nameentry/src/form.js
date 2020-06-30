@@ -1,5 +1,5 @@
 import React from 'react';
-import List from './List';
+import List from './list';
 import './form.css';
 
 class form extends React.Component {
@@ -30,7 +30,7 @@ class form extends React.Component {
     render() {
         return (
             <div>
-                < List />
+                
                 <form onSubmit={this.handleSubmit}>
                     <input
                         className="input-box"
@@ -43,7 +43,7 @@ class form extends React.Component {
                     />
                     <button className="submit-button">Submit</button>
                 </form>
-                <list
+                <List
                     allNames={this.state.allNames}     
                 />
             </div>
