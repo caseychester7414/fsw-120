@@ -1,11 +1,13 @@
 import React from 'react';
-import Badgelist from './Badgelist';
+import Badge from './Badge';
 import './App.css';
+import Form from './Form'
 
 function App() {
     return (
         <div className='app-wrapper'>   
-            < Badgelist />
+            < Badge />
+            < Form />
         </div>
     );
 }
