@@ -3,8 +3,9 @@ import './Badge.css';
 
 export default class Badge extends Component {
     constructor(props) {
-        super(props);
-        let { firstName, lastName, email, birthPlace, phone, favFood, bio } = props;
+        super(props); 
+        console.log(props)
+        let { firstName, lastName, email, birthPlace, phone, favFood, bio } = props.formWrap;
         this.state = {
             badge: {
                 firstName,
@@ -15,7 +16,7 @@ export default class Badge extends Component {
                 favFood,
                 bio
             },
-            backgroundColor: props.backgroundColor
+            
         }
     }
     render() {
