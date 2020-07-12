@@ -1,6 +1,22 @@
 .navbarWrapper{
-    text-align: center;
-    display: flex;
-    flex-direction:column;
+   
     background-color: aqua;
+    padding-left: 10px;
+    top: 0px;
+    position: fixed;
+    right: 7px;
+    padding: 5;
+    
+    
+    
+
+}
+.navbarWrapper div{
+    margin: 5px;
+    
+    display: inline;
+    
+
+    
+    
 }
