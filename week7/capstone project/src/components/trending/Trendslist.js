@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trend } from '../trending/Trend';
+import { Trend } from './Trend';
 import { SettingsIcon } from '../../images/svg/svgs';
 
 export const TrendsList = () => {
